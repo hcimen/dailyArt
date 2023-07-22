@@ -1,0 +1,155 @@
+:root {
+    --midnight-green: #004452ff;
+    --darker-caribbean-current: #005766;
+    --caribbean-current: #005766;
+    --blue-munsell: #0088a3ff;
+    --blue-green: #0096c7ff;
+    --pacific-cyan: #00b4d8ff;
+    --vivid-sky-blue: #48cae4ff;
+    --non-photo-blue: #90e0efff;
+    --non-photo-blue-2: #ade8f4ff;
+    --light-cyan: #caf0f8ff;
+    --lightest:#e6ffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  text-align: left;
+  background-color: var(--light-cyan);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lightest);
+  color: var(--caribbean-current);
+  font-size: 4vw;
+  border-color: var(--blue-green);
+  border: solid;
+  border-width: 5px;
+  font-family:'Sitka Text', Courier, monospace;
+  margin-bottom: 0.25%;
+}
+
+.header a{
+  text-decoration:  none;
+}
+
+.header .logo{
+  display: flex;
+  justify-content: center;
+  width: 98%;
+  padding: 2%;
+  text-align: center;
+}
+
+.logoWithHamburger{
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerLinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 2.5vw;
+  margin: 1%;
+}
+
+a{
+  color: var(--caribbean-current);
+  transition: font-size 0.5s;
+}
+
+.logo a:hover, .logo a:focus  {
+  font-size: 4.3vw;
+}
+
+.headerLinks a:hover, .headerLinks a:focus  {
+  font-size: 2.7vw;
+  background-color: var(--light-cyan);
+}
+
+a:link, a:visited, a:hover, a:focus  {
+  color: var(--caribbean-current);
+} 
+
+.navLink {
+  text-align: center;
+}
+
+.headerLinksNone{
+  display: none;
+}
+
+.headerDropDown{
+  display: flex;
+  justify-content: flex-end;
+  padding: 2%;
+  font-size: 3vw;
+}
+
+.mainBody{
+  display: flex;
+  flex-direction: column;
+}
+
+.artshow {
+  background-color: var(--lightest);
+  color: var(--caribbean-current);
+  font-size: 4vw;
+  border-color: var(--blue-green);
+  border: solid;
+  border-width: 5px;
+  padding: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.25%;
+  text-align: center;
+  height: 55vw;
+  width: 100%;
+  font-family: 'Sitka Text', Courier, monospace;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-family:'Sitka Text', Courier, monospace;
+  background-color: var(--lightest);
+  color: var(--caribbean-current);
+  font-size: 2vw;
+  border-color: var(--blue-green);
+  border: solid;
+  border-width: 5px;
+  text-align: center;
+}
+
+footer div{
+  width: 33%;
+}
+
+.footer a:link, .footer a:visited{
+  color: var(--caribbean-current);
+  text-decoration: none;
+  cursor: help;
+  list-style-type: none;
+}
+
+.footer a:hover, .footer a:active {
+  color: var(--caribbean-current);
+  background-color: var(--vivid-sky-blue);
+  list-style-type: square;
+}
+
+.socialMedia{
+  display: flex;
+  justify-content: space-evenly;
+}

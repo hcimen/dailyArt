@@ -1,0 +1,22 @@
+:root {
+    --midnight-green: #004452ff;
+    --darker-caribbean-current: #005766;
+    --caribbean-current: #005766;
+    --blue-munsell: #0088a3ff;
+    --blue-green: #0096c7ff;
+    --pacific-cyan: #00b4d8ff;
+    --vivid-sky-blue: #48cae4ff;
+    --non-photo-blue: #90e0efff;
+    --non-photo-blue-2: #ade8f4ff;
+    --light-cyan: #caf0f8ff;
+    --lightest:#e6ffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  text-align: left;
+  background-color: var(--light-cyan);
+}
