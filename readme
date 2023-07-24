@@ -1,0 +1,24 @@
+Random Art Piece of the Day
+
+Random Art Piece of the Day is a full-stack web application that displays a random piece of art from the Art Institute of Chicago's API. 
+Each time the page is loaded, a new random artwork is fetched and shown on the website.
+
+Technologies:
+    Node.js
+    Express.js
+    EJS
+    HTML, CSS, and JavaScript
+
+After clonning the repisotory to your local machine, find the cloned folder under code editor and you'll need to enter following prompt to install NPM packages;
+
+npm init
+npm install
+npm install axios ejs express node nodemon path
+
+When installments are done, in order to run the project you'll need to enter following prompt;
+nodemon app.js
+
+Then open your web browser and go to http://localhost:5555 to access the web project.
+
+Contact:
+If you have any questions or want to get in touch, you can reach me at haruncimen@gmail.com

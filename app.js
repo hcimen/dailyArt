@@ -27,6 +27,13 @@ app.get('/contact', (req, res) => {
   res.render('contact');
 });
 
+app.get('/credit', async (req, res) => {
+  try {
+    const artworkData = await getSomeArt();
+    res.render('credit', { artworkData });
+  } catch (error) {
+    console.error(error);
+}});
 
 const port = 5555; 
 app.listen(port, () => {

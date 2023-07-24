@@ -30,26 +30,14 @@
 
         </header>
 
-        <main class="mainBody" id="mainBody">
-
-
-
-            <div class="artshow" id="artshow">
-                <p class="title"><%= artworkData.title %> by <%= artworkData.artist_title %> </p>
-                <a href="/"><img src="https://www.artic.edu/iiif/2/<%= artworkData.image_id %>/full/843,/0/default.jpg" alt="<%= artworkData.thumbnail.alt_text %>"></a>       
-            
-                <p class="leftText">
-                    Explanation: <br> <%= artworkData.thumbnail.alt_text %> <br>
-                    ID Number : <%= artworkData.id %> <br>
-                    Reference Number: <%= artworkData.main_reference_number %> <br>
-                    Made around <%= artworkData.date_display %>
-                </p>
-                <p class="leftText" id="creditLine">
-                   <a href="/credit"> Credit Line <br><%= artworkData.credit_line %> </a> 
-                </p>
-            </div>
-
-        </main>
+        <div class="artshow" id="artshow">
+            <p class="leftText" id="creditLine">
+                Credit Line for <%= artworkData.title %>  <br><%= artworkData.credit_line %>
+                
+            </p>
+            <a href="/"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="/credit"> <i class="fa-solid fa-arrow-rotate-right"></i> </a>
+        </div>
 
         <footer class="footer" id="footer">  
             <div>
