@@ -30,27 +30,13 @@
 
         </header>
 
-        <main class="mainBody" id="mainBody">
-
-
-
-            <div class="artshow" id="artshow">
-                <p class="title"><%= artworkData.title %> by <%= artworkData.artist_title %> </p>
-                <a href="/"><img src="https://www.artic.edu/iiif/2/<%= artworkData.image_id %>/full/843,/0/default.jpg" alt="<%= artworkData.thumbnail.alt_text %>"></a>       
-            
-                <p class="leftText">
-                    Explanation: <br> <%= artworkData.thumbnail.alt_text %> <br>
-                    ID Number : <%= artworkData.id %> <br>
-                    Reference Number: <%= artworkData.main_reference_number %> <br>
-                    Made around <%= artworkData.date_display %>
-                </p>
-                <p class="leftText" id="creditLine">
-                    Credit Line <br><%= artworkData.credit_line %>
-                    
-                </p>
+        <div class="aboutme" id="aboutme" >
+            <div style="width: 90%; margin-left: auto; margin-right: auto; height: 100vw;">
+                <object title="resume" data="<%= pdfFilePath %>" type="application/pdf" width="100%" height="100%" />
+                    Object
+                </object>
             </div>
-
-        </main>
+        </div>
 
         <footer class="footer" id="footer">  
             <div>

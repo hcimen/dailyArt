@@ -30,27 +30,29 @@
 
         </header>
 
-        <main class="mainBody" id="mainBody">
-
-
-
-            <div class="artshow" id="artshow">
-                <p class="title"><%= artworkData.title %> by <%= artworkData.artist_title %> </p>
-                <a href="/"><img src="https://www.artic.edu/iiif/2/<%= artworkData.image_id %>/full/843,/0/default.jpg" alt="<%= artworkData.thumbnail.alt_text %>"></a>       
-            
-                <p class="leftText">
-                    Explanation: <br> <%= artworkData.thumbnail.alt_text %> <br>
-                    ID Number : <%= artworkData.id %> <br>
-                    Reference Number: <%= artworkData.main_reference_number %> <br>
-                    Made around <%= artworkData.date_display %>
-                </p>
-                <p class="leftText" id="creditLine">
-                    Credit Line <br><%= artworkData.credit_line %>
-                    
-                </p>
-            </div>
-
-        </main>
+        <div class="contactForm">
+	
+            <div class="contact" id="contact">
+                <p style="text-align: center;">Contact / Question Form </p>
+                <form action="#"> 
+        
+                    <label for="Name">Name: </label>
+                    <input type="name" name="name" id="name" placeholder="Name & Surname">
+        
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Email"> <br> <br>  
+        
+                    <label for="username">Username: </label>
+                    <input type="username" name="username" id="username" placeholder="Username">
+        
+                    <label for="message">Message: </label>
+                    <textarea rows="8" cols="50" type="textarea" name="message" id="message" placeholder="Your Message"> 
+                    </textarea>
+        
+                    <button type="submit" id="Submit"> Submit </button>
+                </form>
+            </div> <br>
+        </div>
 
         <footer class="footer" id="footer">  
             <div>
